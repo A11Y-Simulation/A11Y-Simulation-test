@@ -1,6 +1,3 @@
-// @use './base/base';
-// @use './layout/header';
-// @use './layout/footer';
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800&display=swap");
 
 * {
@@ -39,7 +36,10 @@ body {
 
     .header-logo {
       margin-left: -2rem;
-
+.icon {
+    max-width: 7rem;
+    max-height: 7rem;
+}
       a {
         float: left;
       }
@@ -102,7 +102,7 @@ body {
       column-gap: 50px;
 
       .section-left {
-        width: 90%;
+        width: 230%;
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -119,14 +119,18 @@ body {
             text-decoration: none;
           }
         }
-
-        p.bullet:before {
-          content: "■ ";
-          position: relative;
-          color: #666666;
-          list-style-type: circle;
-          margin-left: -0.8rem;
-        }
+.ul2{
+    margin-left: 3rem;
+    font-size: 0.90rem;
+    color: #7c7c7c;
+}
+        // p.bullet:before {
+        //   content: "■ ";
+        //   position: relative;
+        //   color: #666666;
+        //   list-style-type: circle;
+        //   margin-left: -0.8rem;
+        // }
 
         .label-header {
           background: #01aa9d;
@@ -182,21 +186,24 @@ body {
       }
 
       .section-right {
-        width: 60%;
+        width: 100%;
         height: 100%;
         display: flex;
+   
         flex-direction: column;
         row-gap: 25px;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
 
-        svg {
-          width: 50%;
-          position: absolute;
-          top: 200px;
-          left: 48%;
-          transform: scaleX(-1);
+        img {
+
+   margin-left: 10rem;
+   margin-top: 10rem;
+width: 150%;
+
+
+
         }
       }
     }
@@ -227,17 +234,21 @@ body {
   .footer {
     height: 10%;
     width: $width;
-    display: grid;
-    place-items: center;
+text-align: center;
+
 
     p {
+        margin-top: 2rem;
       font-size: 14px;
       font-weight: 900;
-
-      a {
-        color: #372865;
-      }
+      display: inline-block;
+      padding-left: 100%;
+      animation: marquee 15s linear infinite;
     }
+    @keyframes marquee {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
   }
 
   #mobile-nav {

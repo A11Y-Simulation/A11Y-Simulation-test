@@ -273,6 +273,9 @@ body #mobile-nav.active {
   body {
     height: auto;
   }
+  body :focus {
+    outline: unset;
+  }
   body .header {
     width: 90%;
     height: 50px;

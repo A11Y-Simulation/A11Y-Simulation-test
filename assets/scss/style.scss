@@ -19,9 +19,9 @@ body {
   row-gap: 30px;
   margin: 1rem 2rem 2rem;
 
-  :focus {
-    outline: none;
-  }
+  // :focus {
+  //   outline: none;
+  // }
 
   :placeholder {
     color: #767676;
@@ -117,6 +117,7 @@ body {
           a {
             color: #7c7c7c;
             text-decoration: none;
+            outline: none;
           }
         }
         .ul2 {
@@ -340,8 +341,8 @@ body {
     height: auto;
 
     :focus {
-        outline: unset;
-      }
+      outline: unset;
+    }
 
     .header {
       width: $width;

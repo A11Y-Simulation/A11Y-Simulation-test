@@ -17,9 +17,6 @@ body {
   row-gap: 30px;
   margin: 1rem 2rem 2rem;
 }
-body :focus {
-  outline: none;
-}
 body :placeholder {
   color: #767676;
 }
@@ -103,6 +100,7 @@ body .main .home .section-left p.bullet {
 body .main .home .section-left p.bullet a {
   color: #7c7c7c;
   text-decoration: none;
+  outline: none;
 }
 body .main .home .section-left .ul2 {
   margin-left: 3rem;

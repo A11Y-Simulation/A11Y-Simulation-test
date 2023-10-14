@@ -17,9 +17,6 @@ body {
   row-gap: 30px;
   margin: 1rem 2rem 2rem;
 }
-body :placeholder {
-  color: #767676;
-}
 body .header {
   width: 60%;
   height: 20%;
@@ -31,8 +28,8 @@ body .header .header-logo {
   margin-left: -2rem;
 }
 body .header .header-logo .icon {
-  max-width: 7rem;
-  max-height: 7rem;
+  max-width: 6rem;
+  max-height: 6rem;
 }
 body .header .header-logo a {
   float: left;
@@ -85,7 +82,7 @@ body .main .home {
        column-gap: 50px;
 }
 body .main .home .section-left {
-  width: 230%;
+  width: 2800%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -132,8 +129,12 @@ body .main .home .section-left .h2 {
 }
 body .main .home .section-left form .form-group {
   display: flex;
+  align-items: center;
   -moz-column-gap: 10px;
        column-gap: 10px;
+}
+body .main .home .section-left form .form-group .label {
+  color: #7c7c7c;
 }
 body .main .home .section-left form .form-group input {
   background: #ffffff;
@@ -163,7 +164,7 @@ body .main .home .section-right {
 }
 body .main .home .section-right img {
   margin-left: 10rem;
-  margin-top: 8rem;
+  margin-top: 20rem;
   width: 150%;
 }
 body .main .social {
@@ -187,20 +188,35 @@ body .footer {
   width: 60%;
   text-align: center;
 }
-body .footer p {
-  margin-top: 2rem;
-  font-size: 14px;
-  font-weight: 900;
-  display: inline-block;
-  padding-left: 100%;
-  animation: marquee 15s linear infinite;
+body .footer .fly {
+  animation: 2s anim-lineUp ease-out infinite;
 }
-@keyframes marquee {
+body .footer .copyright {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 2rem;
+  color: #7c7c7c;
+}
+body .footer .copyright img {
+  max-width: 8rem;
+  padding-left: 0.5rem;
+  vertical-align: center;
+}
+@keyframes anim-lineUp {
   0% {
-    transform: translate(0, 0);
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
   }
   100% {
-    transform: translate(-100%, 0);
+    opacity: 1;
+    transform: translateY(0%);
   }
 }
 body #mobile-nav {
@@ -270,9 +286,6 @@ body #mobile-nav.active {
 @media screen and (max-width: 1024px) {
   body {
     height: auto;
-  }
-  body :focus {
-    outline: unset;
   }
   body .header {
     width: 90%;

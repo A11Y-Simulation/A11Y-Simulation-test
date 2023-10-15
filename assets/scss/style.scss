@@ -86,4 +86,155 @@ body {
   .mobile-nav-btn {
     cursor: pointer;
   }
+
+  .home {
+    .section {
+        margin-top: 3rem;
+
+      p.bullet {
+        margin-top: 0.7rem;
+        margin-left: 1rem;
+        color: #7c7c7c;
+        text-align: justify;
+        font-size: 0.9rem;
+
+        a {
+          color: #7c7c7c;
+          text-decoration: none;
+          outline: none;
+        }
+      }
+
+      .imgdeco {
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        margin-left: 1rem;
+
+        img {
+          max-width: 7rem;
+        }
+      }
+      .ul2 {
+        margin-left: 2rem;
+        font-size: 0.9rem;
+        color: #7c7c7c;
+      }
+    }
+
+    .h1 {
+      font-size: 40px;
+      color: #555555;
+      font-weight: 900;
+      margin-bottom: 0.7rem;
+    }
+
+    .h2 {
+      font-size: 20px;
+      color: #555555;
+      font-weight: 900;
+      margin-top: 2rem;
+    }
+
+    .h3 {
+        margin-top: 2rem;
+        font-weight: 900;
+        color: #555555;
+    }
+
+    form {
+      .form-group {
+        margin-top: 2rem;
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+
+        .label {
+          color: #7c7c7c;
+        }
+
+        input {
+          background: #ffffff;
+          padding: 10px 15px;
+          width: 230px;
+          border: 1px solid #cccccc;
+          border-radius: 4px;
+        }
+
+        button {
+          background: #01aa9d;
+          color: #ffffff;
+          padding: 15px;
+          border: 0;
+          border-radius: 5px;
+          font-weight: 500;
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .social {
+        margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      row-gap: 15px;
+
+      .ul {
+        list-style-type: none;
+        display: flex;
+        column-gap: 12px;
+        justify-content: left;
+
+        li {
+          a {
+            svg {
+              width: 30px;
+              fill: #dedfe7;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer {
+    text-align: center;
+    margin-top: 2rem;
+
+    .fly {
+      animation: 2s anim-lineUp ease-out infinite;
+      color: #e27474;
+    }
+
+    .copyright {
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: 2rem;
+      color: #7c7c7c;
+
+      img {
+        max-width: 8rem;
+        padding-left: 0.5rem;
+        vertical-align: center;
+      }
+    }
+
+    @keyframes anim-lineUp {
+      0% {
+        opacity: 0;
+        transform: translateY(80%);
+      }
+      20% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+        transform: translateY(0%);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0%);
+      }
+    }
+  }
 }

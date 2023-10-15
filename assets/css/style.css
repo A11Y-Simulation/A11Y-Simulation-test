@@ -72,4 +72,129 @@ body #mobile-nav.active {
 }
 body .mobile-nav-btn {
   cursor: pointer;
+}
+body .home .section {
+  margin-top: 3rem;
+}
+body .home .section p.bullet {
+  margin-top: 0.7rem;
+  margin-left: 1rem;
+  color: #7c7c7c;
+  text-align: justify;
+  font-size: 0.9rem;
+}
+body .home .section p.bullet a {
+  color: #7c7c7c;
+  text-decoration: none;
+  outline: none;
+}
+body .home .section .imgdeco {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+body .home .section .imgdeco img {
+  max-width: 7rem;
+}
+body .home .section .ul2 {
+  margin-left: 2rem;
+  font-size: 0.9rem;
+  color: #7c7c7c;
+}
+body .home .h1 {
+  font-size: 40px;
+  color: #555555;
+  font-weight: 900;
+  margin-bottom: 0.7rem;
+}
+body .home .h2 {
+  font-size: 20px;
+  color: #555555;
+  font-weight: 900;
+  margin-top: 2rem;
+}
+body .home .h3 {
+  margin-top: 2rem;
+  font-weight: 900;
+  color: #555555;
+}
+body .home form .form-group {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+body .home form .form-group .label {
+  color: #7c7c7c;
+}
+body .home form .form-group input {
+  background: #ffffff;
+  padding: 10px 15px;
+  width: 230px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+}
+body .home form .form-group button {
+  background: #01aa9d;
+  color: #ffffff;
+  padding: 15px;
+  border: 0;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 1rem;
+}
+body .home .social {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+body .home .social .ul {
+  list-style-type: none;
+  display: flex;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+  justify-content: left;
+}
+body .home .social .ul li a svg {
+  width: 30px;
+  fill: #dedfe7;
+}
+body .footer {
+  text-align: center;
+  margin-top: 2rem;
+}
+body .footer .fly {
+  animation: 2s anim-lineUp ease-out infinite;
+  color: #e27474;
+}
+body .footer .copyright {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 2rem;
+  color: #7c7c7c;
+}
+body .footer .copyright img {
+  max-width: 8rem;
+  padding-left: 0.5rem;
+  vertical-align: center;
+}
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
 }/*# sourceMappingURL=style.css.map */

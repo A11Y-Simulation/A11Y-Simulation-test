@@ -46,6 +46,7 @@ body {
   #mobile-nav {
     background-color: #01aa9d;
     margin: Opx auto;
+    display: none;
 
     .nav {
       width: 100%;
@@ -79,7 +80,7 @@ body {
   }
 
   #mobile-nav.active {
-    display: none;
+    display: block;
   }
 
   .mobile-nav-btn {

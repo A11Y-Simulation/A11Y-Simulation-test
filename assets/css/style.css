@@ -39,6 +39,7 @@ body .header .club-name {
 body #mobile-nav {
   background-color: #01aa9d;
   margin: Opx auto;
+  display: none;
 }
 body #mobile-nav .nav {
   width: 100%;
@@ -67,7 +68,7 @@ body #mobile-nav .nav .ul li a:hover {
   color: black;
 }
 body #mobile-nav.active {
-  display: none;
+  display: block;
 }
 body .mobile-nav-btn {
   cursor: pointer;

@@ -24,8 +24,8 @@ body .header .header-logo {
   margin-left: -1rem;
 }
 body .header .header-logo .icon {
-  max-width: 6rem;
-  max-height: 6rem;
+  max-width: 8rem;
+  max-height: 8rem;
 }
 body .header .header-logo a {
   text-decoration: none;
@@ -231,5 +231,11 @@ body .footer .copyright img {
   }
   body .mobile-nav-btn {
     display: none;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  body {
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 }/*# sourceMappingURL=style.css.map */

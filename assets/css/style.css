@@ -11,6 +11,18 @@ body {
   width: 90%;
   margin: 1rem 2rem 2rem;
 }
+body .sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  -webkit-clip-path: inset(50%) !important;
+          clip-path: inset(50%) !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
 body .header {
   display: flex;
   justify-content: space-between;
@@ -89,6 +101,15 @@ body .home .section p.bullet a {
   text-decoration: none;
   outline: none;
 }
+body .home .section p.bullet .Clink {
+  text-decoration: underline;
+}
+body .home .section p.Cbullet {
+  color: black;
+}
+body .home .section p.Cbullet a {
+  color: black;
+}
 body .home .section .imgdeco {
   margin-top: 1rem;
   display: flex;
@@ -102,6 +123,9 @@ body .home .section .ul2 {
   margin-left: 2rem;
   font-size: 0.9rem;
   color: #7c7c7c;
+}
+body .home .section .Cul2 {
+  color: black;
 }
 body .home .h1 {
   font-size: 40px;
@@ -119,6 +143,30 @@ body .home .h3 {
   margin-top: 2rem;
   font-weight: 900;
   color: #555555;
+}
+body .home .stats img {
+  width: 30rem;
+  margin-top: 1rem;
+  border: 1px solid #cccccc;
+}
+body .home .stats .disclosure #toggleButton {
+  background: #01aa9d;
+  color: #ffffff;
+  padding: 15px;
+  border: 0;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+body .home .stats .disclosure #content {
+  display: none;
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+body .home .stats .disclosure #content ul {
+  margin-left: 3rem;
+  margin-top: 0.5rem;
 }
 body .home form .form-group {
   margin-top: 2rem;

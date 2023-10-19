@@ -1,5 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800&display=swap");
 
+$background-color: #ffffff;
+$NCfont: #7c7c7c;
+$Ctitle: #555555;
+$NCbuttonFont: #ffffff;
+$NCbuttonBackground: #01aa9d;
+$NCsvg: #dedfe7;
+$NCanim: #e27474;
+
+$Cfont: black;
+
+// $NCbuttonFont :#ffffff;
+// $NCbuttonBackground : #01aa9d;
+// $NCsvg :#dedfe7;
+// $NCanim : #e27474;
+
 * {
   margin: 0;
   padding: 0;
@@ -8,9 +23,21 @@
 }
 
 body {
-  background-color: #ffffff;
+  background-color: $background-color;
   width: 90%;
   margin: 1rem 2rem 2rem;
+
+  .sr-only {
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    clip-path: inset(50%) !important;
+    height: 1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
+    white-space: nowrap !important;
+  }
 
   .header {
     // height: 50px;
@@ -41,12 +68,16 @@ body {
     .club-name {
       font-size: 1.2rem;
       font-weight: 700;
-      color: #01aa9d;
+      color: $NCbuttonBackground;
     }
+
+    // .club-nameC{
+    //   color: red;
+    // }
   }
 
   #mobile-nav {
-    background-color: #01aa9d;
+    background-color: $NCbuttonBackground;
     margin: Opx auto;
     display: none;
 
@@ -96,14 +127,26 @@ body {
       p.bullet {
         margin-top: 0.7rem;
         margin-left: 1rem;
-        color: #7c7c7c;
+        color: $NCfont;
         text-align: justify;
         font-size: 0.9rem;
 
         a {
-          color: #7c7c7c;
+          color: $NCfont;
           text-decoration: none;
           outline: none;
+        }
+
+        .Clink{
+          text-decoration: underline; 
+        }
+      }
+
+      p.Cbullet {
+        color: $Cfont;
+
+        a {
+          color: $Cfont;
         }
       }
 
@@ -120,20 +163,24 @@ body {
       .ul2 {
         margin-left: 2rem;
         font-size: 0.9rem;
-        color: #7c7c7c;
+        color: $NCfont;
+      }
+
+      .Cul2{
+        color: $Cfont;
       }
     }
 
     .h1 {
       font-size: 40px;
-      color: #555555;
+      color: $Ctitle;
       font-weight: 900;
       margin-bottom: 0.7rem;
     }
 
     .h2 {
       font-size: 20px;
-      color: #555555;
+      color: $Ctitle;
       font-weight: 900;
       margin-top: 2rem;
     }
@@ -141,7 +188,38 @@ body {
     .h3 {
       margin-top: 2rem;
       font-weight: 900;
-      color: #555555;
+      color: $Ctitle;
+    }
+
+    .stats {
+      img {
+        width: 30rem;
+        margin-top: 1rem;
+        border: 1px solid #cccccc;
+      }
+      .disclosure {
+        #toggleButton {
+          background: $NCbuttonBackground;
+          color: $NCbuttonFont;
+          padding: 15px;
+          border: 0;
+          border-radius: 5px;
+          font-weight: 500;
+          font-size: 1rem;
+          margin-left: 1rem;
+        }
+
+        #content {
+          display: none;
+          margin-top: 1rem;
+          margin-left: 2rem;
+
+          ul {
+            margin-left: 3rem;
+            margin-top: 0.5rem;
+          }
+        }
+      }
     }
 
     form {
@@ -152,7 +230,7 @@ body {
         column-gap: 10px;
 
         .label {
-          color: #7c7c7c;
+          color: $NCfont;
         }
 
         input {
@@ -164,8 +242,8 @@ body {
         }
 
         button {
-          background: #01aa9d;
-          color: #ffffff;
+          background: $NCbuttonBackground;
+          color: $NCbuttonFont;
           padding: 15px;
           border: 0;
           border-radius: 5px;
@@ -191,7 +269,7 @@ body {
           a {
             svg {
               width: 30px;
-              fill: #dedfe7;
+              fill: $NCsvg;
             }
           }
         }
@@ -205,14 +283,14 @@ body {
 
     .fly {
       animation: 2s anim-lineUp ease-out infinite;
-      color: #e27474;
+      color: $NCanim;
     }
 
     .copyright {
       margin-right: auto;
       margin-left: auto;
       margin-top: 2rem;
-      color: #7c7c7c;
+      color: $NCfont;
 
       img {
         max-width: 8rem;
@@ -259,14 +337,14 @@ body {
           li {
             a {
               text-decoration: none;
-              color: #7c7c7c;
+              color: $NCfont;
               font-weight: 700;
             }
 
             &:last-of-type {
               a {
-                background: #01aa9d;
-                color: #ffffff;
+                background: $NCbuttonBackground;
+                color: $NCbuttonFont;
                 padding: 15px;
                 border: 1px solid #cccccc;
                 border-radius: 5px;

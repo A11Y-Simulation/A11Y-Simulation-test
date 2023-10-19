@@ -163,6 +163,7 @@ body .home .stats .disclosure #content {
   display: none;
   margin-top: 1rem;
   margin-left: 2rem;
+  font-size: 0.9rem;
 }
 body .home .stats .disclosure #content ul {
   margin-left: 3rem;

@@ -114,7 +114,6 @@ body {
     }
   }
 
-
   #mobile-nav.active {
     display: block;
   }
@@ -227,7 +226,6 @@ body {
       }
     }
 
-
     form {
       .form-group {
         margin-top: 2rem;
@@ -257,8 +255,8 @@ body {
         }
       }
 
-      .Cform-group{
-        button{
+      .Cform-group {
+        button {
           background: $CbuttonBackground;
         }
       }
@@ -288,11 +286,8 @@ body {
     }
 
     .Csocial {
-
       .ul {
-
         li {
-
           a {
             svg {
               fill: $Csvg;
@@ -312,7 +307,7 @@ body {
       color: $NCanim;
     }
 
-    .Cfly{
+    .Cfly {
       animation: 0s;
       color: $Canim;
     }
@@ -328,6 +323,10 @@ body {
         padding-left: 0.5rem;
         vertical-align: center;
       }
+    }
+
+    .Ccopyright{
+      color: $Cfont; 
     }
 
     @keyframes anim-lineUp {
@@ -368,13 +367,13 @@ body {
           li {
             a {
               text-decoration: none;
-              color: $NCfont;
+              color: $Cfont;
               font-weight: 700;
             }
 
             &:last-of-type {
               a {
-                background: $NCbuttonBackground;
+                background: $CbuttonBackground;
                 color: $NCbuttonFont;
                 padding: 15px;
                 border: 1px solid #cccccc;
@@ -393,10 +392,10 @@ body {
         .stats {
           img {
             max-width: 30rem;
-
-          }}
-      }}
-
+          }
+        }
+      }
+    }
 
     .mobile-nav-btn {
       display: none;

@@ -6,12 +6,14 @@ $Ctitle: #555555;
 $NCbuttonFont: #ffffff;
 $NCbuttonBackground: #01aa9d;
 $NCsvg: #dedfe7;
+$Csvg: black;
 $NCanim: #e27474;
+$Canim: green;
 
 $Cfont: black;
 
 // $NCbuttonFont :#ffffff;
-// $NCbuttonBackground : #01aa9d;
+$CbuttonBackground: #018076;
 // $NCsvg :#dedfe7;
 // $NCanim : #e27474;
 
@@ -25,7 +27,7 @@ $Cfont: black;
 body {
   background-color: $background-color;
   width: 90%;
-  margin: 1rem 2rem 2rem;
+  margin: 1rem 2rem 2rem 1rem;
 
   .sr-only {
     border: 0 !important;
@@ -71,13 +73,13 @@ body {
       color: $NCbuttonBackground;
     }
 
-    // .club-nameC{
-    //   color: red;
-    // }
+    .club-nameC {
+      color: $CbuttonBackground;
+    }
   }
 
   #mobile-nav {
-    background-color: $NCbuttonBackground;
+    background-color: $CbuttonBackground;
     margin: Opx auto;
     display: none;
 
@@ -112,6 +114,7 @@ body {
     }
   }
 
+
   #mobile-nav.active {
     display: block;
   }
@@ -137,8 +140,8 @@ body {
           outline: none;
         }
 
-        .Clink{
-          text-decoration: underline; 
+        .Clink {
+          text-decoration: underline;
         }
       }
 
@@ -166,7 +169,7 @@ body {
         color: $NCfont;
       }
 
-      .Cul2{
+      .Cul2 {
         color: $Cfont;
       }
     }
@@ -193,13 +196,14 @@ body {
 
     .stats {
       img {
-        width: 30rem;
+        // max-width: 30rem;
+        width: 100%;
         margin-top: 1rem;
         border: 1px solid #cccccc;
       }
       .disclosure {
         #toggleButton {
-          background: $NCbuttonBackground;
+          background: $CbuttonBackground;
           color: $NCbuttonFont;
           padding: 15px;
           border: 0;
@@ -212,7 +216,7 @@ body {
         #content {
           display: none;
           margin-top: 1rem;
-          margin-left: 2rem;
+          padding-left: 2rem;
           font-size: 0.9rem;
 
           ul {
@@ -223,15 +227,13 @@ body {
       }
     }
 
+
     form {
       .form-group {
         margin-top: 2rem;
-        display: flex;
-        align-items: center;
-        column-gap: 10px;
 
         .label {
-          color: $NCfont;
+          color: $Cfont;
         }
 
         input {
@@ -240,6 +242,7 @@ body {
           width: 230px;
           border: 1px solid #cccccc;
           border-radius: 4px;
+          margin-top: 0.75rem;
         }
 
         button {
@@ -250,6 +253,13 @@ body {
           border-radius: 5px;
           font-weight: 500;
           font-size: 1rem;
+          margin-top: 0.75rem;
+        }
+      }
+
+      .Cform-group{
+        button{
+          background: $CbuttonBackground;
         }
       }
     }
@@ -276,6 +286,21 @@ body {
         }
       }
     }
+
+    .Csocial {
+
+      .ul {
+
+        li {
+
+          a {
+            svg {
+              fill: $Csvg;
+            }
+          }
+        }
+      }
+    }
   }
 
   .footer {
@@ -285,6 +310,11 @@ body {
     .fly {
       animation: 2s anim-lineUp ease-out infinite;
       color: $NCanim;
+    }
+
+    .Cfly{
+      animation: 0s;
+      color: $Canim;
     }
 
     .copyright {
@@ -357,6 +387,16 @@ body {
         }
       }
     }
+
+    .home {
+      .section {
+        .stats {
+          img {
+            max-width: 30rem;
+
+          }}
+      }}
+
 
     .mobile-nav-btn {
       display: none;

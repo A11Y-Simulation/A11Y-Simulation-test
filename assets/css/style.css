@@ -9,7 +9,7 @@
 body {
   background-color: #ffffff;
   width: 90%;
-  margin: 1rem 2rem 2rem;
+  margin: 1rem 2rem 2rem 1rem;
 }
 body .sr-only {
   border: 0 !important;
@@ -49,8 +49,11 @@ body .header .club-name {
   font-weight: 700;
   color: #01aa9d;
 }
+body .header .club-nameC {
+  color: #018076;
+}
 body #mobile-nav {
-  background-color: #01aa9d;
+  background-color: #018076;
   margin: Opx auto;
   display: none;
 }
@@ -145,12 +148,12 @@ body .home .h3 {
   color: #555555;
 }
 body .home .stats img {
-  width: 30rem;
+  width: 100%;
   margin-top: 1rem;
   border: 1px solid #cccccc;
 }
 body .home .stats .disclosure #toggleButton {
-  background: #01aa9d;
+  background: #018076;
   color: #ffffff;
   padding: 15px;
   border: 0;
@@ -162,7 +165,7 @@ body .home .stats .disclosure #toggleButton {
 body .home .stats .disclosure #content {
   display: none;
   margin-top: 1rem;
-  margin-left: 2rem;
+  padding-left: 2rem;
   font-size: 0.9rem;
 }
 body .home .stats .disclosure #content ul {
@@ -171,13 +174,9 @@ body .home .stats .disclosure #content ul {
 }
 body .home form .form-group {
   margin-top: 2rem;
-  display: flex;
-  align-items: center;
-  -moz-column-gap: 10px;
-       column-gap: 10px;
 }
 body .home form .form-group .label {
-  color: #7c7c7c;
+  color: black;
 }
 body .home form .form-group input {
   background: #ffffff;
@@ -185,6 +184,7 @@ body .home form .form-group input {
   width: 230px;
   border: 1px solid #cccccc;
   border-radius: 4px;
+  margin-top: 0.75rem;
 }
 body .home form .form-group button {
   background: #01aa9d;
@@ -194,6 +194,10 @@ body .home form .form-group button {
   border-radius: 5px;
   font-weight: 500;
   font-size: 1rem;
+  margin-top: 0.75rem;
+}
+body .home form .Cform-group button {
+  background: #018076;
 }
 body .home .social {
   margin-top: 2rem;
@@ -212,6 +216,9 @@ body .home .social .ul li a svg {
   width: 30px;
   fill: #dedfe7;
 }
+body .home .Csocial .ul li a svg {
+  fill: black;
+}
 body .footer {
   text-align: center;
   margin-top: 2rem;
@@ -219,6 +226,10 @@ body .footer {
 body .footer .fly {
   animation: 2s anim-lineUp ease-out infinite;
   color: #e27474;
+}
+body .footer .Cfly {
+  animation: 0s;
+  color: green;
 }
 body .footer .copyright {
   margin-right: auto;
@@ -277,6 +288,9 @@ body .footer .copyright img {
     border-radius: 5px;
     font-weight: 500;
     font-size: 1rem;
+  }
+  body .home .section .stats img {
+    max-width: 30rem;
   }
   body .mobile-nav-btn {
     display: none;
